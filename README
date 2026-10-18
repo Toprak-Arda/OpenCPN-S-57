@@ -1,35 +1,36 @@
-----------------------------------------------------------------------
-1.  Overview
-----------------------------------------------------------------------
+# OpenCPN-S-57
 
-a.  Opencpn was built with the following objectives in mind.
+OpenCPN açık kaynaklı deniz navigasyon yazılımı üzerinde
+kaynak kod inceleme ve arayüz geliştirme çalışmaları.
 
-    i.   Intended use as primary navigation interface for vessels
-         with full-time helm-visible navigational suites.
-         Other tools may be better for offline route planning, tide
-         and current prediction, online logging, etc.
-    ii.  Quick startup and shutdown.
-    iii. Those and only those toolbar buttons really needed for
-         daily operation.
-    iv.  Portability, thus wxWidgets core components.  Currently
-         tested and in production use on Windows, MacOS, Linux
-         and Android.
-    v.   Conventional ( i.e. popular and modern ) chart format
-         support.  In the real world, this means BSB format raster
-         charts, and S57ENC format vector charts.
+## Proje Hakkında
 
+Bu proje, OpenCPN kaynak kodlarını incelemek, yazılımın
+mimarisini anlamak ve deniz navigasyon arayüzleri üzerinde
+geliştirme deneyimi kazanmak amacıyla yürütülmektedir.
 
+Çalışmalar kapsamında C++ kod yapısı, kullanıcı arayüzü
+bileşenleri ve S-57 elektronik deniz haritalarıyla ilgili
+konular incelenmektedir.
 
-        And, of course, opencpn is all GPL'ed (or equivalent)
-                        Open Source code.
+## Çalışma Alanları
 
+- OpenCPN kaynak kodlarının incelenmesi
+- C++ ile mevcut yazılım üzerinde geliştirme çalışmaları
+- Deniz navigasyonu kullanıcı arayüzleri
+- Gösterge paneli ve araç durum bilgileri
+- S-57 elektronik deniz haritaları
+- Git ve GitHub ile sürüm kontrolü
 
-    Personal Note:
-    Opencpn is in primary daily use as the navigation package aboard
-    M/V Dyad, a 48 ft trawler yacht cruising from Newfoundland to the
-    Bahamas yearly.
+## Kullanılan Teknolojiler
 
-    Our thanks go to MAXCDN for providing a CDN network delivering
-    the OpenCPN downloads worldwide.
+- C++
+- OpenCPN
+- Git
+- GitHub
 
-    OpenCPN is distributed using a multitude of licenses, see LICENSING.
+## Proje Durumu
+
+Proje, kaynak kod inceleme ve geliştirme aşamasındadır.
+Özellikler geliştirildikçe ve test edildikçe bu doküman
+güncellenecektir.
