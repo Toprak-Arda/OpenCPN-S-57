@@ -1,36 +1,49 @@
 # OpenCPN-S-57
 
 OpenCPN açık kaynaklı deniz navigasyon yazılımı üzerinde
-kaynak kod inceleme ve arayüz geliştirme çalışmaları.
+C++ kaynak kod inceleme, arayüz geliştirme ve GPS simülasyonu
+çalışmaları.
 
 ## Proje Hakkında
 
-Bu proje, OpenCPN kaynak kodlarını incelemek, yazılımın
-mimarisini anlamak ve deniz navigasyon arayüzleri üzerinde
-geliştirme deneyimi kazanmak amacıyla yürütülmektedir.
+Bu proje, OpenCPN deniz navigasyon yazılımının kaynak kodlarını
+incelemek ve mevcut yazılım üzerinde geliştirme deneyimi kazanmak
+amacıyla yürütülmüştür.
 
-Çalışmalar kapsamında C++ kod yapısı, kullanıcı arayüzü
-bileşenleri ve S-57 elektronik deniz haritalarıyla ilgili
-konular incelenmektedir.
+Çalışmalar kapsamında uygulamanın gösterge paneli, yapılandırma
+ayarları, Linux yerel ayarları ve simüle edilmiş GPS verileri
+üzerinde çalışılmıştır.
 
-## Çalışma Alanları
+## Yapılan Çalışmalar
 
 - OpenCPN kaynak kodlarının incelenmesi
-- C++ ile mevcut yazılım üzerinde geliştirme çalışmaları
-- Deniz navigasyonu kullanıcı arayüzleri
-- Gösterge paneli ve araç durum bilgileri
-- S-57 elektronik deniz haritaları
-- Git ve GitHub ile sürüm kontrolü
+- C++ ile mevcut kod yapısında değişiklikler yapılması
+- Linux ortamında karakter yerel ayarlarıyla ilgili davranışların
+  incelenmesi
+- Gösterge panelinin çalışmasının kontrol edilmesi
+- GPS/NMEA verilerinin simülasyon yoluyla test edilmesi
+- S-57 elektronik deniz haritaları ve deniz navigasyonu
+  bileşenlerinin incelenmesi
 
 ## Kullanılan Teknolojiler
 
 - C++
+- Python
 - OpenCPN
-- Git
-- GitHub
+- Git ve GitHub
+- Linux
+- GPS/NMEA simülasyonu
 
 ## Proje Durumu
 
-Proje, kaynak kod inceleme ve geliştirme aşamasındadır.
-Özellikler geliştirildikçe ve test edildikçe bu doküman
-güncellenecektir.
+Proje kapsamında kaynak kod inceleme, geliştirme ve test çalışmaları
+yapılmıştır. OpenCPN uygulaması yerel Linux ortamında çalıştırılmış,
+gösterge paneli ve simüle edilmiş GPS verileri kontrol edilmiştir.
+
+Bu depo, OpenCPN kaynak kodları üzerindeki kişisel geliştirme
+ve öğrenme çalışmalarını içermektedir.
+
+## Not
+
+OpenCPN açık kaynaklı bir projedir. Bu depo, OpenCPN'in resmî
+deposu değildir; kişisel geliştirme çalışmalarını içerir.
