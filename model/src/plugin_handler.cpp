@@ -122,6 +122,7 @@ static std::vector<std::string> glob_dir(const std::string& dir_path,
   std::vector<std::string> found;
   wxString s;
   wxDir dir(dir_path);
+  if (!dir.IsOpened()) return found;
   auto match = dir.GetFirst(&s, pattern);
   while (match) {
     static const std::string SEP =

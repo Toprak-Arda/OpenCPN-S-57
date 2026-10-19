@@ -820,6 +820,14 @@ bool MyApp::OnInit() {
   // This needs to be set early to catch numerics in config file.
   setlocale(LC_NUMERIC, "C");
 
+#if defined(__linux__) && !defined(__ANDROID__)
+  // wxFileConfig sorts keys using locale-dependent case folding. Keep this
+  // stable before loading settings and when changing the UI language.
+  // Use UTF-8 so Turkish text and file names remain representable.
+  if (!setlocale(LC_CTYPE, "C.UTF-8"))
+    setlocale(LC_CTYPE, "C.utf8");
+#endif
+
   g_start_time = wxDateTime::Now();
 
   g_loglast_time = g_start_time;

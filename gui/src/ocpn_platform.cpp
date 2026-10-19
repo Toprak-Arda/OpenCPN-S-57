@@ -1124,6 +1124,15 @@ wxString OCPNPlatform::ChangeLocale(wxString &newLocaleID,
   //    Always use dot as decimal
   setlocale(LC_NUMERIC, "C");
 
+#if defined(__linux__) && !defined(__ANDROID__)
+  // wxLocale::Init changes LC_CTYPE too. Changing case folding after
+  // wxFileConfig loaded its sorted keys makes existing entries unfindable
+  // (notably I/i in Turkish), and subsequent writes create duplicates.
+  // Match the UTF-8 locale used before loading the config in MyApp::OnInit.
+  if (!setlocale(LC_CTYPE, "C.UTF-8"))
+    setlocale(LC_CTYPE, "C.utf8");
+#endif
+
   return return_val;
 }
 #endif
